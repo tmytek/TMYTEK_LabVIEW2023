@@ -1,0 +1,216 @@
+{
+    "commands": {
+		"CMD1": {
+            "data": ["0xF0", "0x05", "0x00", "0x09", "0x00", "0x00", "0x00", "0x00", "0x03", "0x01"],
+            "description": "IFIC(64 bits) write x009, x0301 ..."
+        },
+		"CMD2": {
+            "data": ["0xF0", "0x05", "0x00", "0x01", "0xf0", "0xf0", "0x00", "0x00", "0x0f", "0x0f"],
+            "description": "IFIC(64 bits) write x001 ..."
+        },
+		"CMD3": {
+            "data": ["0xF0", "0x05", "0x03", "0x00", "0x10", "0x1b", "0xe4", "0xa0", "0x00", "0x06"],
+            "description": "IFIC(64 bits) Ready to Tune ... x06"
+        },
+		"CMD4": {
+            "data": ["0xF0", "0x05", "0x03", "0x00", "0x10", "0x1b", "0xe4", "0xa0", "0x00", "0x0e"],
+            "description": "IFIC(64 bits) Coarse Tune ... x0E"
+        },		
+		"CMD5": {
+            "data": ["0xF0", "0x05", "0x03", "0x00", "0x10", "0x1b", "0xe4", "0xa0", "0x00", "0x16"],
+            "description": "IFIC(64 bits) Linear Tune ... x16"
+        },
+		"CMD6": {
+            "data": ["0xB0", "0x00", "0x81"],
+            "description": "read Coarse done and PLL lock ..."
+        },
+		"CMD7": {
+            "data": ["0xB2", "0x00", "0x81"],
+            "description": "read INIT state ..."
+        },
+		"CMD8": {
+            "data": ["0xB1", "0x03", "0x00"],
+            "description": "repeat MEM INIT command ..."
+        },
+		"CMD9": {
+            "data": ["0xB3", "0x00", "0x00"],
+            "description": "PLL linear tune is OFF ..."
+        },
+		"CMD10": {
+            "data": ["0xB3", "0x01", "0x00"],
+            "description": "PLL linear tune is ONE Times ..."
+        },
+		"CMD11": {
+            "data": ["0xB3", "0x03", "0x00"],
+            "description": "PLL linear tune is LOOP ..."
+        },
+		"CMD12": {
+            "data": ["0xB5", "0x00", "0x09", "0x00", "0x00", "0x00", "0x00", "0x00", "0x01"],
+            "description": "IFIC(60 bits) write x009, x0001 ..."
+        },
+		"CMD13": {
+            "data": ["0xB5", "0x00", "0x09", "0x00", "0x00", "0x00", "0x00", "0x03", "0x01"],
+            "description": "IFIC(60 bits) write x009, x0301 ..."
+        },
+		"CMD14": {
+            "data": ["0xB5", "0x00", "0x01", "0xf0", "0xf0", "0x00", "0x00", "0x0f", "0x0f"],
+            "description": "IFIC(60 bits) write x001  ..."
+        },
+		"CMD15": {
+            "data": ["0xB6", "0x00", "0xf0", "0xf0", "0x00", "0x00", "0x0f", "0x0f"],
+            "description": "IFIC(60 bits) read data ..."
+        },
+		"CMD16": {
+            "data": ["0xA7", "0x01", "0x00"],
+            "description": "set I2C to read Voltage and Current ..."
+        },
+		"CMD17": {
+            "data": ["0xA8", "0x00", "0xf0", "0xf0", "0x0f", "0x0f"],
+            "description": "read Voltage V ..."
+        },
+		"CMD18": {
+            "data": ["0xA9", "0x00", "0xf0", "0xf0", "0x0f", "0x0f"],
+            "description": "read Current I ..."
+        },
+		"CMD19": {
+            "data": ["0xA0", "0x00", "0x19", "0x01", "0x19", "0x0f", "0x0f"],
+            "description": "set I2C parameter ... power ..."
+        },
+		"CMD20": {
+            "data": ["0xA1", "0x01", "0x00"],
+            "description": "set I2C to go ..."
+        },
+		"CMD21": {
+            "data": ["0xA2", "0x00", "0x00"],
+            "description": "read I2C state ..."
+        },
+		"CMD22": {
+            "data": ["0xA3", "0x00", "0x00", "0x00", "0x00", "0x00", "0x00"],
+            "description": "read I2C read data ..."
+        },
+		"CMD23": {
+            "data": ["0xA0", "0x01", "0x5a", "0x01", "0x00", "0x0f", "0x0f"],
+            "description": "set I2C parameter ... temperature ..."
+        },
+		"CMD24": {
+            "data": ["0xAA", "0x01", "0x00"],
+            "description": "set I2C Temp function enable ..."
+        },
+		"CMD25": {
+            "data": ["0xAA", "0x00", "0x00"],
+            "description": "set I2C Temp function disable ..."
+        },
+		"CMD26": {
+            "data": ["0xAB", "0x01", "0xf0", "0x0f"],
+            "description": "read Temp ..."
+        },
+		"CMD27": {
+            "data": ["0xF1", "0x00", "0x81"],
+            "description": "read Alarm, HTB, AB_reset, Ext-Reset, TX and RX ..."
+        },
+		"CMD28": {
+            "data": ["0xF2", "0x0f", "0xf0", "0x0f"],
+            "description": "set AB_reset_o, prsnt_b, rst_b, PW_en ..."
+        },
+		"CMD29": {
+            "data": ["0xF3", "0x7f", "0xf0", "0x0f"],
+            "description": "set TestIO = input ..."
+        },
+		"CMD30": {
+            "data": ["0xF3", "0x00", "0xf0", "0x0f"],
+            "description": "set TestIO = output ..."
+        },
+		"CMD31": {
+            "data": ["0xF4", "0x00", "0xf0", "0x0f"],
+            "description": "read TestIO at TestIO = input ..."
+        },
+		"CMD32": {
+            "data": ["0xF4", "0x7f", "0xf0", "0x0f"],
+            "description": "read TestIO at TestIO = output = 1 ..."
+        },
+		"CMD33": {
+            "data": ["0xF4", "0x00", "0xf0", "0x0f"],
+            "description": "read TestIO at TestIO = output = 0 ..."
+        },
+		"CMD34": {
+            "data": ["0xF5", "0x1f", "0xf0", "0x0f"],
+            "description": "set GPIO = input..."
+        },
+		"CMD35": {
+            "data": ["0xF5", "0x00", "0xf0", "0x0f"],
+            "description": "set GPIO = output ..."
+        },
+		"CMD36": {
+            "data": ["0xF6", "0x00", "0xf0", "0x0f"],
+            "description": "read GPIO ..."
+        },	
+		"CMD37": {
+            "data": ["0xFE", "0x00", "0x81"],
+            "description": "read Code = backup or non-backup ..."
+        },	
+		"CMD38": {
+            "data": ["0xFF", "0x00", "0xf0", "0xf0", "0x0f", "0x0f"],
+            "description": "read Version numbers ..."
+        },
+		"CMD39": {
+            "data": ["0x90", "0x0a", "0xf0", "0x0f"],
+            "description": "control RX by 0x90 ..."
+        },
+		"CMD40": {
+            "data": ["0x90", "0x05", "0xf0", "0x0f"],
+            "description": "control TX by 0x90 ..."
+        },
+		"CMD41": {
+            "data": ["0x90", "0x00", "0xf0", "0x0f"],
+            "description": "control RX and TX by RX TX input ..."
+        },
+		"CMD42": {
+            "data": ["0xB4", "0x01", "0xf0", "0x0f"],
+            "description": "set BF and IF Init together ..."
+        },
+		"CMD43": {
+            "data": ["0xF0", "0x05", "0x00", "0x03", "0x00", "0x00", "0x00", "0x20", "0x08", "0x0a"],
+            "description": "IFIC(64 bits) write x003, x20080a ... open ATC"
+        },
+		"CMD44": {
+            "data": ["0xF0", "0x05", "0x00", "0x03", "0x00", "0x00", "0x00", "0x00", "0x08", "0x0a"],
+            "description": "IFIC(64 bits) write x003, x00080a ... close ATC"
+        },
+		"CMD45": {
+            "data": ["0xF0", "0x05", "0x00", "0x09", "0x00", "0x00", "0x00", "0x00", "0x00", "0x03"],
+            "description": "IFIC(64 bits) write x009, x0003 ..."
+        },
+		"CMD46": {
+            "data": ["0xF0", "0x05", "0x00", "0x01", "0xf0", "0xf0", "0x00", "0x00", "0x0f", "0x0f"],
+            "description": "IFIC(64 bits) write x001 ..."
+        },
+		"CMD47": {
+            "data": ["0xF0", "0x02", "0x00", "0x3d", "0x00", "0x00", "0x00", "0x00", "0x00", "0x02"],
+            "description": "BFIC(64 bits) write x03d, x0002 ..."
+        },
+		"CMD48": {
+            "data": ["0xF0", "0x02", "0x00", "0x01", "0xf0", "0xf0", "0x00", "0x00", "0x0f", "0x0f"],
+            "description": "BFIC(64 bits) write x001 ..."
+        },
+		"CMD49": {
+            "data": ["0x90", "0x0c", "0x00", "0x00"],
+            "description": "control RX and TX by RX TX in Standby ..."
+        },
+		"CMD50": {
+            "data": ["0xF0", "0x05", "0x00", "0x03", "0x00", "0x00", "0x00", "0x30", "0x08", "0x0a"],
+            "description": "IFIC(64 bits) write x003, x20080a ... open ATC + soft reset ON"
+        },
+		"CMD51": {
+            "data": ["0xF0", "0x05", "0x00", "0x03", "0x00", "0x00", "0x00", "0x20", "0x08", "0x0a"],
+            "description": "IFIC(64 bits) write x003, x20080a ... open ATC + soft reset OFF"
+        },
+		"CMD52": {
+            "data": ["0xA4", "0x01", "0x00", "0x00"],
+            "description": "set I2C re-work ..."
+        },
+		"CMD53": {
+            "data": ["0x90", "0x00", "0x00", "0x00"],
+            "description": "control RX and TX by RX TX in input port ..."
+        }
+    }
+}

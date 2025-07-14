@@ -1,0 +1,192 @@
+{
+    "commands": {
+		"CMD1": {
+            "data": ["0xA0", "0x01", "0x19", "0x00", "0x20", "0x00", "0x01", "0xf1", "0xf1"],
+            "description": "MI2C, to set parameter(POWI2C write 2 byte)"
+        },
+		"CMD2": {
+            "data": ["0xA0", "0x00", "0x19", "0x01", "0x20", "0xf0", "0xf1"],
+            "description": "MI2C, to set parameter(POWI2C read 1 byte)"
+        },	
+		"CMD3": {
+            "data": ["0xA0", "0x01", "0x5a", "0x01", "0x00", "0xf0", "0xf1"],
+            "description": "MI2C, to set parameter(TMPI2C read 2 byte)"
+        },
+		"CMD4": {
+            "data": ["0xA1", "0x01", "0xf0", "0xf1"],
+            "description": "MI2C, to set work"
+        },
+		"CMD5": {
+            "data": ["0xA2", "0x00", "0xf0", "0xf1"],
+            "description": "MI2C, read state"
+        },
+		"CMD6": {
+            "data": ["0xA3", "0x00", "0xf0", "0xf0", "0xf0", "0xf0", "0xf1"],
+            "description": "MI2C, read data(4 btyes)"
+        },	
+		"CMD7": {
+            "data": ["0xA4", "0x01", "0x00", "0x00"],
+            "description": "MI2C, to repeat POWI2C and TMPI2C initial"
+        },	
+		"CMD8": {
+            "data": ["0xA7", "0x01", "0xf0", "0xf1"],
+            "description": "POWI2C, to read Voltage and Current"
+        },
+		"CMD9": {
+            "data": ["0xA8", "0x00", "0xf0", "0xf0", "0xf0", "0xf1"],
+            "description": "POWI2C, read Voltage"
+        },
+		"CMD10": {
+            "data": ["0xA9", "0x00", "0xf0", "0xf0", "0xf1", "0xf1"],
+            "description": "POWI2C, read Current ..."
+        },			
+		"CMD11": {
+            "data": ["0xAA", "0x01", "0xf0", "0xf1"],
+            "description": "TMPI2C, enable TMPI2C"
+        },
+		"CMD12": {
+            "data": ["0xAA", "0x00", "0xf0", "0xf1"],
+            "description": "TMPI2C, disable TMPI2C"
+        },
+		"CMD13": {
+            "data": ["0xAB", "0x00", "0xf0", "0xf1"],
+            "description": "TMPI2C, read Temp"
+        },
+		"CMD14": {
+            "data": ["0xB2", "0xf0", "0xf1"],
+            "description": "IFBFSPI, read INIT state"
+        },
+		"CMD15": {
+            "data": ["0xB1", "0x01", "0xf0", "0xf1"],
+            "description": "IFBFSPI, to repeat BFSPI initial"
+        },
+		"CMD16": {
+            "data": ["0xB4", "0x01", "0xf0", "0x0f"],
+            "description": "IFBFSPI, to set IFSPI and BFSPI initial together"
+        },
+		"CMD17": {
+            "data": ["0xB0", "0xf0", "0xf1"],
+            "description": "IFSPI, read Coarse done and PLL lock"
+        },
+		"CMD18": {
+            "data": ["0xB3", "0x00", "0xf0", "0xf1"],
+            "description": "IFSPI, to close linear tune"
+        },
+		"CMD19": {
+            "data": ["0xB3", "0x01", "0xf0", "0xf1"],
+            "description": "IFSPI, to open linear tune"
+        },
+		"CMD20": {
+            "data": ["0xB3", "0x03", "0xf0", "0xf1"],
+            "description": "IFSPI, to reapeat linear tune"
+        },	
+		"CMD21": {
+            "data": ["0xB5", "0x00", "0x09", "0x00", "0x00", "0x00", "0x00", "0x00", "0x01", "0xf0", "0xf1"],
+            "description": "IFSPI, to write Ax009, Dx0001"
+        },
+		"CMD22": {
+            "data": ["0xB5", "0x00", "0x09", "0x00", "0x00", "0x00", "0x00", "0x03", "0x01", "0xf0", "0xf1"],
+            "description": "IFSPI, to write Ax009, Dx0301"
+        },
+		"CMD23": {
+            "data": ["0xB5", "0x00", "0x01", "0xf0", "0xf0", "0xf0", "0xf0", "0xf0", "0xf1", "0xf0", "0xf1"],
+            "description": "IFSPI, to write Ax001, Dxf0f1"
+        },
+		"CMD24": {
+            "data": ["0xB6", "0x00", "0xf0", "0xf0", "0xf0", "0xf0", "0xf0", "0xf1"],
+            "description": "IFSPI, read data"
+        },
+		"CMD25": {
+            "data": ["0xF0", "0x05", "0x00", "0x09", "0x00", "0x00", "0x00", "0x00", "0x03", "0x01"],
+            "description": "IFSPIbypass to write Ax009, Dx0301"
+        },
+		"CMD26": {
+            "data": ["0xF0", "0x05", "0x00", "0x01", "0xf0", "0xf0", "0xf0", "0xf0", "0xf0", "0xf1"],
+            "description": "IFSPIbypass to write Ax001, Dxf0f1"
+        },
+		"CMD27": {
+            "data": ["0xF0", "0x05", "0x03", "0x00", "0x10", "0x1b", "0xe4", "0xa0", "0x00", "0x06"],
+            "description": "IFSPIbypass to write Ax301, Dx06(Ready to Tune)"
+        },
+		"CMD28": {
+            "data": ["0xF0", "0x05", "0x03", "0x00", "0x10", "0x1b", "0xe4", "0xa0", "0x00", "0x0e"],
+            "description": "IFSPIbypass to write Ax301, Dx0E(Coarse Tune)"
+        },		
+		"CMD29": {
+            "data": ["0xF0", "0x05", "0x03", "0x00", "0x10", "0x1b", "0xe4", "0xa0", "0x00", "0x16"],
+            "description": "IFSPIbypass to write Ax301, Dx16(Linear Tune)"
+        },	
+		"CMD30": {
+            "data": ["0xF0", "0x05", "0x00", "0x03", "0x00", "0x00", "0x00", "0x20", "0x08", "0x0a"],
+            "description": "IFSPIbypass to write Ax003, Dx20080a(open ATC)"
+        },
+		"CMD31": {
+            "data": ["0xF0", "0x05", "0x00", "0x03", "0x00", "0x00", "0x00", "0x00", "0x08", "0x0a"],
+            "description": "IFSPIbypass to write Ax003, Dx00080a(close ATC)"
+        },
+		"CMD32": {
+            "data": ["0x90", "0x0a", "0xf0", "0xf1"],
+            "description": "SYSTEM, to enable IFSPI RX by FPGA"
+        },
+		"CMD33": {
+            "data": ["0x90", "0x05", "0xf0", "0xf1"],
+            "description": "SYSTEM, to enable IFSPI TX by FPGA"
+        },
+		"CMD34": {
+            "data": ["0x90", "0x00", "0xf0", "0xf1"],
+            "description": "SYSTEM, to disable IFSPI RX and TX by FPGA"
+        },
+		"CMD35": {
+            "data": ["0x90", "0x0c", "0xf0", "0xf1"],
+            "description": "SYSTEM, to standby IFSPI RX and TX by FPGA"
+        },
+		"CMD36": {
+            "data": ["0xF1", "0xf0", "0xf1"],
+            "description": "SYSTEM, read Alarm, HTB, AB_reset, Ext-Reset, TXi and RXi"
+        },
+		"CMD37": {
+            "data": ["0xF2", "0x0f", "0xf0", "0xf1"],
+            "description": "SYSTEM, to set AB_reset_o, prsnt_b, rst_b and PW_en"
+        },
+		"CMD38": {
+            "data": ["0xF3", "0x7f", "0xf0", "0xf1"],
+            "description": "SYSTEM, to set TestIO is input"
+        },
+		"CMD39": {
+            "data": ["0xF3", "0x00", "0xf0", "0xf1"],
+            "description": "SYSTEM, to set TestIO is output"
+        },
+		"CMD40": {
+            "data": ["0xF4", "0x00", "0xf0", "0xf1"],
+            "description": "SYSTEM, to read TestIO state(input)"
+        },
+		"CMD41": {
+            "data": ["0xF4", "0x7f", "0xf0", "0xf1"],
+            "description": "SYSTEM, to read TestIO state(output)"
+        },
+		"CMD42": {
+            "data": ["0xF5", "0x1f", "0xf0", "0xf1"],
+            "description": "SYSTEM, to set GPIO is input"
+        },
+		"CMD43": {
+            "data": ["0xF5", "0x00", "0xf0", "0xf1"],
+            "description": "SYSTEM, to set GPIO is output"
+        },
+		"CMD44": {
+            "data": ["0xF6", "0xf0", "0xf1"],
+            "description": "SYSTEM, read GPIO state"
+        },	
+		"CMD45": {
+            "data": ["0xFE", "0xf0", "0xf1"],
+            "description": "SYSTEM, read image is primary or golden"
+        },	
+		"CMD46": {
+            "data": ["0xFF", "0xf0", "0xf0", "0xf0", "0xf0", "0xf1"],
+            "description": "SYSTEM, read Version"
+        },
+		"CMD47": {
+			"data": ["0xB1", "0x02", "0xf0", "0xf1"],
+            "description": "IFBFSPI, to repeat IFSPI initial"
+		}
+    }
+}
