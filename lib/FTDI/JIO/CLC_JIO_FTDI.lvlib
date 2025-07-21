@@ -13,6 +13,7 @@
 	<Item Name="CLC_JIO_Recode_ALL_addSG.vi" Type="VI" URL="../CLC_JIO_Recode_ALL_addSG.vi"/>
 	<Item Name="CLC_JIO_subBFIC.vi" Type="VI" URL="../CLC_JIO_subBFIC.vi"/>
 	<Item Name="CLC_JIO_subBFIC_channel.vi" Type="VI" URL="../CLC_JIO_subBFIC_channel.vi"/>
+	<Item Name="CLC_JIO_subBFIC_disable.vi" Type="VI" URL="../CLC_JIO_subBFIC_disable.vi"/>
 	<Item Name="CLC_JIO_subUDC.vi" Type="VI" URL="../CLC_JIO_subUDC.vi"/>
 	<Item Name="WaitingTime_FTDI_JIO.vi" Type="VI" URL="../WaitingTime_FTDI_JIO.vi"/>
 </Library>

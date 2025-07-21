@@ -9,5 +9,6 @@
 </Property>
 	<Item Name="_save_csv_phaseCAL_Ken.vi" Type="VI" URL="../_save_csv_phaseCAL_Ken.vi"/>
 	<Item Name="_save_csv_phaseCAL_Ken_Steps.vi" Type="VI" URL="../_save_csv_phaseCAL_Ken_Steps.vi"/>
+	<Item Name="JIO_OnePannel_ChannelSweep_Ken.vi" Type="VI" URL="../JIO_OnePannel_ChannelSweep_Ken.vi"/>
 	<Item Name="JIO_OnePannel_PhaseCali_Ken.vi" Type="VI" URL="../JIO_OnePannel_PhaseCali_Ken.vi"/>
 </Library>
